@@ -10,3 +10,6 @@ Personal reading queue and recommendation app.
 - **Normal workflow:** development branch → Deploy Preview → explicit production release
 
 See [DEPLOYMENT_POLICY.md](DEPLOYMENT_POLICY.md) before any Netlify deployment.
+
+
+Netlify linking is intentionally staged before first production release.
