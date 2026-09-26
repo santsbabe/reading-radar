@@ -1,0 +1,15 @@
+[build]
+  publish = "."
+
+# HARD SAFETY GATE:
+# Production builds are skipped unless the latest commit message contains
+# the exact token: [deploy production]
+[context.production]
+  ignore = "node ./netlify-production-gate.js"
+
+# Never suppress free preview builds.
+[context.deploy-preview]
+  ignore = "exit 1"
+
+[context.branch-deploy]
+  ignore = "exit 1"
